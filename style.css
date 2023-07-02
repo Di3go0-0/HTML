@@ -1,4 +1,86 @@
-*{
+* {
+    font-family: 'Caveat', cursive;
     margin: 0;
     padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+  
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 10px;
+    height: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(136, 8, 33);
+}
+  
+.icono {
+    flex: 1;
+    text-align: left;
+}
+  
+.titulo {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+  
+.imagenIcono {
+    height: 60px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+#button {
+    height: 50px;
+    width: 90px;
+    border-radius: 25%;
+    background-color: rgb(159, 4, 17);
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: rgb(97, 3, 10);
+}
+
+.container {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagenes/imagen1.jpg);
+    background-size: cover;
+}
+
+.containerInner {
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(136, 8, 33);
 }
