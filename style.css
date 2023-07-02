@@ -2,6 +2,7 @@
     font-family: 'Caveat', cursive;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Agrega esta línea para incluir los bordes en el cálculo del tamaño */
 }
 
 html, body {
@@ -10,7 +11,10 @@ html, body {
 
 body {
     position: relative;
+    overflow: hidden; /* Agrega esta línea para evitar que se muestre una barra de desplazamiento vertical */
 }
+  
+
   
 header {
     position: absolute;
@@ -19,7 +23,7 @@ header {
     width: 100%;
     display: flex;
     padding: 20px 10px;
-    height: 60px;
+    height: 80px;
     flex-wrap: wrap;
     align-items: center;
     background-color: rgb(136, 8, 33);
